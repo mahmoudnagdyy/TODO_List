@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "SUSE", sans-serif;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 100px;
+    color: white;
+}
+
+
+h1 span{
+    color: orange;
+}
+
+
+.add{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.add input{
+    border: none;
+    outline: none;
+    background-color: rgb(31, 30, 30);
+    padding: 20px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+
+
+
+.add input::placeholder{
+    color: rgb(177, 176, 176);
+}
+
+.add input:focus{
+    width: 500px;
+}
+
+
+.add button{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -62px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 550px){
+    .add input:focus{
+        width: 300px;
+    }
+}
+
+
+
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 i{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.tasks_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+    width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+
+.task p{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width:400px;
+}
+
+.task_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.task button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+.task button:nth-child(1){
+    color: white;
+}
+
+
+.task button:nth-child(2){
+    color: red;
+}
+
+
+.task input{
+    border: 1px solid #474747;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    font-size: 18px;
+    width:400px;
+}
+
+.save{
+    color: rgb(255, 208, 0);
+    font-size: 22px !important;
+}
+
+
+
+@media (max-width: 550px){
+    .task{
+        width: 300px;
+    }
+    
+    .task p{
+        width: 250px;
+    }
+    
+    .task input{
+        width:250px;
+    }
+    
+}
